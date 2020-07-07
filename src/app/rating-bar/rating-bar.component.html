@@ -1,0 +1,9 @@
+<h2>Rating Bar</h2>
+<div *ngIf="showRatingValue">
+  {{ ratingValue }}
+</div>
+<div class="rating-bar">
+  <div class="rating-unit" *ngFor="let item of ratingUnits">
+    {{ item.value }}
+  </div>
+</div>
